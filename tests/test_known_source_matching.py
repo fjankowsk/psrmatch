@@ -1,4 +1,3 @@
-import logging
 from io import StringIO
 
 from astropy.coordinates import SkyCoord
