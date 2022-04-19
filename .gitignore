@@ -7,7 +7,5 @@ __pycache__
 # output image files
 *.pdf
 *.png
-# pickle files
-*.pkl
 # text data files
 *.csv

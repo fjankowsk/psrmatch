@@ -19,6 +19,7 @@ clean:
 	rm -f ${SRCDIR}/apps/*.pyc
 	rm -rf ${SRCDIR}/__pycache__
 	rm -rf ${SRCDIR}/apps/__pycache__
+	rm -rf ${BASEDIR}/tests/__pycache__
 	rm -rf ${BASEDIR}/build
 	rm -rf ${BASEDIR}/dist
 	rm -rf ${BASEDIR}/psrmatch.egg-info
