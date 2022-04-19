@@ -3,8 +3,8 @@
 #   Match sources to known source catalogues.
 #
 
+import importlib
 import logging
-import os.path
 
 import numpy as np
 from scipy.spatial import KDTree
@@ -184,11 +184,12 @@ class Matcher(object):
             )
 
         if catalogue_name == "psrcat":
-            catalogue = parse_psrcat(
-                os.path.join(
-                    os.path.dirname(__file__), "catalogues", "psrcat_v164_beta.txt"
-                )
+            filename = (
+                importlib.resources.files(__name__.split(".")[0])
+                / "catalogues"
+                / "psrcat_v164_beta.txt"
             )
+            catalogue = parse_psrcat(filename)
 
         # XXX: add catalogue data here
         self.__catalogue = catalogue

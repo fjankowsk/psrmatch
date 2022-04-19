@@ -51,5 +51,5 @@ setup(
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
-    zip_safe=False,
+    zip_safe=True,
 )
