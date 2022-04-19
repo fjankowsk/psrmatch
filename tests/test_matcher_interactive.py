@@ -1,3 +1,7 @@
+#
+#   2022 Fabian Jankowski
+#
+
 from io import StringIO
 
 from astropy.coordinates import SkyCoord

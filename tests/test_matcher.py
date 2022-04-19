@@ -179,8 +179,6 @@ def test_psrcat_dm_offsets():
     m.load_catalogue("psrcat")
     m.create_search_tree()
 
-    offset = Angle(m.dist_thresh - 0.01, unit=units.degree)
-
     for item in m.catalogue:
         for fact in [-1, 1]:
             dm = item["dm"] * (1 + fact * (m.dm_thresh - 1.0) / 100.0)
