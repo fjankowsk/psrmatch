@@ -1,4 +1,5 @@
 BLK         =   black
+NOSE        =   nose2
 PIP         =   pip
 
 BASEDIR     =   $(CURDIR)
@@ -9,7 +10,8 @@ help:
 	@echo 'Usage:'
 	@echo 'make black           reformat the code using black code formatter'
 	@echo 'make clean           remove temporary files'
-	@echo 'make install         install the module locally'
+	@echo 'make install         install the package locally'
+	@echo 'make tests           run the unit tests'
 
 black:
 	${BLK} *.py */*.py */*/*.py
@@ -27,4 +29,7 @@ clean:
 install:
 	${PIP} install .
 
-.PHONY: help black clean install
+tests:
+	${NOSE}
+
+.PHONY: help black clean install tests
