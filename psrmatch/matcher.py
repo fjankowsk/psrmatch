@@ -187,7 +187,7 @@ class Matcher(object):
             filename = (
                 importlib.resources.files(__name__.split(".")[0])
                 / "catalogues"
-                / "psrcat_v164_beta.txt"
+                / "psrcat_v167.txt"
             )
             catalogue = parse_psrcat(filename)
 
