@@ -3,7 +3,6 @@
 #   Catalogue related helper functions.
 #
 
-import logging
 import os.path
 
 from astropy.coordinates import SkyCoord
