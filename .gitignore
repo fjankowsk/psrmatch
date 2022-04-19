@@ -1,0 +1,13 @@
+__pycache__
+*.pyc
+# vim swap files
+*.swp
+# macos preview directories
+.DS_Store
+# output image files
+*.pdf
+*.png
+# pickle files
+*.pkl
+# text data files
+*.csv
