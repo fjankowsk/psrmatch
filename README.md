@@ -18,6 +18,22 @@ The easiest and recommended way to install the software is through `pip` directl
 
 ## Usage ##
 
+```bash
+$ psrmatch-match_pulsars -h
+usage: psrmatch-match_pulsars [-h] [--version] ra dec dm
+
+Find matching pulsars.
+
+positional arguments:
+  ra          Right ascension in ICRS frame and in hh:mm:ss notation.
+  dec         Declination in ICRS frame and in hh:mm:ss notation.
+  dm          Dispersion measure.
+
+optional arguments:
+  -h, --help  show this help message and exit
+  --version   show program's version number and exit
+```
+
 The cross-matcher operates on `Astropy` SkyCoord objects and input dispersion measures like this:
 
 ```python
