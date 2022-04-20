@@ -35,6 +35,7 @@ setup(
     package_data={"psrmatch": ["catalogues/*.txt"]},
     install_requires=[
         "astropy",
+        "importlib-resources;python_version<'3.7'",
         "numpy",
         "scipy",
     ],

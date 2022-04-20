@@ -3,7 +3,11 @@
 #   Match sources to known source catalogues.
 #
 
-import importlib
+try:
+    import importlib.resources as importlib_resources
+except:
+    import importlib_resources
+
 import logging
 
 import numpy as np
@@ -185,7 +189,7 @@ class Matcher(object):
 
         if catalogue_name == "psrcat":
             filename = (
-                importlib.resources.files(__name__.split(".")[0])
+                importlib_resources.files(__name__.split(".")[0])
                 / "catalogues"
                 / "psrcat_v167.txt"
             )
