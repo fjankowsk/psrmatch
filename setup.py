@@ -29,7 +29,7 @@ setup(
     description="Known source matching of single-pulse candidates.",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
-    url="https://bitbucket.org/jankowsk/psrmatch",
+    url="https://github.com/fjankowsk/psrmatch",
     license="MIT",
     packages=find_packages(),
     package_data={"psrmatch": ["catalogues/*.txt"]},
